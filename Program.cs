@@ -6,6 +6,7 @@ namespace Perimeter
     {
         static void Main(string[] args)
         {
+            string finish;
             do
             {
             Console.WriteLine("Hello Friend! Welcome to the Home Calculator!");
@@ -27,11 +28,13 @@ namespace Perimeter
             Console.WriteLine("The area of " + room + " is " + area + ".");
             Console.WriteLine("The perimeter of " + room + " is " + pm + "." + "\r\n");
 
-            Console.WriteLine("Would you like to measure another room " + name + "?" + " Please enter Y/N.");
-            string finish = Console.ReadLine();
-            }
-            while(true);
+            Console.WriteLine("Would you like to measure another room " + name + "?" + " Please enter Yes or No.");
 
+            // Console.Write("Are you done? Enter Yes or No:");
+            finish = Console.ReadLine();
+
+
+            } while(finish.ToLower() != "no");
         }
     }
 }
