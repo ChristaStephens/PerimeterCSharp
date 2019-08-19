@@ -30,7 +30,6 @@ namespace Perimeter
 
             Console.WriteLine("Would you like to measure another room " + name + "?" + " Please enter Yes or No.");
 
-            // Console.Write("Are you done? Enter Yes or No:");
             finish = Console.ReadLine();
 
 
